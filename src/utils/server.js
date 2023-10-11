@@ -7,9 +7,7 @@ const port = 3000;
 module.exports = async () => {
   try {
     app.get("/", (req, res) => {
-      res.send(
-        `🟢 Parfait Online in IEgyGamerI server ${moment().format("LTS")}`,
-      );
+      res.send(`🟢 Hook is Online: ${moment().format("LTS")}`);
     });
     app.listen(port, () => {
       console.log(
